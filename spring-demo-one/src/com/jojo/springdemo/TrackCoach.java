@@ -4,6 +4,14 @@ public class TrackCoach implements ICoach {
 
     private IFortuneService iFortuneService;
 
+    public void init() {
+        System.out.println("TrackCoach: init");
+    }
+
+    public void destroy() {
+        System.out.println("TrackCoach: destroy");
+    }
+
     public TrackCoach() {
 
     }

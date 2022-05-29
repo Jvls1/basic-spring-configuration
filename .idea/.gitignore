@@ -6,3 +6,11 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# JetBrains template
+*.iml
+# Directory-based project format:
+.idea/
+# IntelliJ
+/out/
+# Java template
+*.class
