@@ -19,15 +19,15 @@ public class TennisCoach implements ICoach{
     public TennisCoach() {
     }
 
-    @PostConstruct
-    public void doMyStartupStuff() {
-        System.out.println("TennisCoach: doMyStartupStuff");
-    }
-
-    @PreDestroy
-    public void doMyCleanupStuff() {
-        System.out.println("TennisCoach: doMyCleanupStuff");
-    }
+//    @PostConstruct
+//    public void doMyStartupStuff() {
+//        System.out.println("TennisCoach: doMyStartupStuff");
+//    }
+//
+//    @PreDestroy
+//    public void doMyCleanupStuff() {
+//        System.out.println("TennisCoach: doMyCleanupStuff");
+//    }
 
     //    @Autowired
 //    public TennisCoach(IFortuneService fortuneService) {
