@@ -2,9 +2,14 @@ package com.jojo.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
+@Scope("singleton") //this is the default scope
 public class TennisCoach implements ICoach{
 
     @Autowired
@@ -12,6 +17,16 @@ public class TennisCoach implements ICoach{
     private IFortuneService fortuneService;
 
     public TennisCoach() {
+    }
+
+    @PostConstruct
+    public void doMyStartupStuff() {
+        System.out.println("TennisCoach: doMyStartupStuff");
+    }
+
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println("TennisCoach: doMyCleanupStuff");
     }
 
     //    @Autowired
